@@ -1,0 +1,12 @@
+{
+  // The IP address of the server.
+  "server_ip": "192.168.0.0",
+  // Port configured in the server.
+  "server_port": "8080",
+  //Name given by the server owner.
+  "user_name": "USER_NAME",
+  //Key to skip current song. The available codes are 'Right Control', 'Right Alt', 'Right Shift' and 'F1' to 'F12',
+  "skip_key": "CODE",
+  //Key to get de name and status of the current song. The available codes are the same as for 'skip_key'.
+  "get_song_key": "CODE"
+}
