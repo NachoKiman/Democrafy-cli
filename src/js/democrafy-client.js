@@ -3,7 +3,7 @@ const gkm = require('gkm');
 const wget = require('node-wget');
 const nodeNotifier = require('node-notifier');
 
-const configurationController = require('configuration-controller');
+const configurationController = require('./configuration-controller');
 
 var client = (function () {
 
