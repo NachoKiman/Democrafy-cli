@@ -1,7 +1,6 @@
 {
   "server_ip": "SERVER_IP",
   "server_port": 8888,
-  "user_name": "USER_NAME",
   "skip_key": "Num Lock",
   "get_song_key": "Right Control"
 }
