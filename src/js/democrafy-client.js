@@ -13,7 +13,8 @@ class Client {
     }
 
     defineSocketConnection(configuration) {
-        const socket = io(`http://${configuration.server_ip}:${configuration.server_port}/client`, {origins: '*:*'});
+        console.log("Trying to connect", `http://${configuration.server_ip}:${configuration.server_port}/client`);
+        const socket = io(`http://${configuration.server_ip}:${configuration.server_port}/client`, {origins: '*:*', reconnection: false});
         return setupEndpoints(socket);
     }
 }

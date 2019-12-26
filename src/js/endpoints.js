@@ -11,6 +11,9 @@ function onAction(action, io) {
             console.warn(action.payload.data.msj);
             authenticator.init(emitAuthenticate.bind(this, io));
             break;
+        case 'LOG_OUT_USER_FULFILLED':
+            authenticator.reset();
+            break;
         case 'VOTE_SKIP_SONG_FULFILLED':
             console.info(action.payload.data.msj);
             break;
@@ -29,7 +32,15 @@ function onAction(action, io) {
 }
 
 function onConnect(io) {
+    console.log("Connected");
     authenticator.init(emitAuthenticate.bind(this, io));
+    io.on('action', (action) => onAction(action, io));
+    io.on('disconnect', () => onDisconnect());
+}
+
+function onDisconnect() {
+    authenticator.reset();
+    console.log('Disconnected');
 }
 
 function emitAuthenticate(io, userName, password) {
@@ -56,7 +67,6 @@ function emit(socket, type, payload) {
 }
 
 module.exports = (io) => {
-    io.on('action', (action) => onAction(action, io));
     io.on('connect', () => onConnect(io));
     return {
         emitSkipSongRequest: emitSkipSongRequest.bind(this, io),
