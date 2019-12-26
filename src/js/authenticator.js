@@ -1,10 +1,9 @@
-var readlineSync = require('readline-sync');
+const readlineSync = require('readline-sync');
 
 class Authenticator {
 
     constructor() {
-        this.userName = '';
-        this.isAuthenticated = false;
+        this.reset();
     }
 
     init(authenticate) {
@@ -20,6 +19,11 @@ class Authenticator {
 
     markAsAuthenticated() {
         this.isAuthenticated = true;
+    }
+
+    reset() {
+        this.userName = '';
+        this.isAuthenticated = false;
     }
 }
 
