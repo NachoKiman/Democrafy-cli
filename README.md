@@ -4,7 +4,7 @@ Democrafy server by requesting data of the current song and requesting that the 
 interface and global keypress events. This is the only application you have to download. 
 
 ## Democrafy system
-The Democrafy System allows a group a people to listen to music that the whole group enjoy. An administrator user will 
+The Democrafy System allows a group a people to listen to music that the whole group can enjoy. An administrator user will 
 start up the Democrafy-server and the Democrafy-web-client. Then the people that want to participate in the 
 Spotify Democracy will log on to the Democrafy-web-client or the Democrafy-cli and vote for skipping current playing 
 song, see the current status and lots of relevant data of a song and adding new songs to the server queue.
