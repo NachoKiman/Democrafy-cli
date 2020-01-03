@@ -1,7 +1,7 @@
 # Democrafy cli
-This is one of the user applications of the Democrafy System. The Democrafy-cli lets you interact with the Democrafy server by requesting data 
-of the current song and requesting that the song is skipped.This is the only application you have to 
-download being a normal user. 
+This is one of the user applications of the Democrafy System. The Democrafy-cli lets you interact with the 
+Democrafy server by requesting data of the current song and requesting that the song is skipped via only command line 
+interface and global keypress events. .This is the only application you have to download being a normal user. 
 
 ## Democrafy system
 The Democrafy System allows a group a people to listen to music that the whole group enjoy. An administrator user will 
